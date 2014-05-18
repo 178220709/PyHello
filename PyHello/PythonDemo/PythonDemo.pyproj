@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>f66e30e7-b5ba-4275-a173-59094aa0722f</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>PythonDemo.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>PythonDemo</Name>
+    <RootNamespace>PythonDemo</RootNamespace>
+    <InterpreterId>{9a7a9026-48c1-4688-9d5d-e5699d47d074}</InterpreterId>
+    <InterpreterVersion>3.4</InterpreterVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="BaseFeature\DocString.py" />
+    <Compile Include="BaseFeature\zoo.py" />
+    <Compile Include="BaseFeature\Key.py" />
+    <Compile Include="BaseFeature\function.py" />
+    <Compile Include="BaseFeature\module1.py" />
+    <Compile Include="structurFeature\mymodule_demo.py" />
+    <Compile Include="structurFeature\MyDemo.py" />
+    <Compile Include="structurFeature\using_sys.py" />
+    <Compile Include="structurFeature\using_name.py" />
+    <Compile Include="structurFeature\mymodule_demo2.py" />
+    <Compile Include="structurFeature\mymodule.py" />
+    <Compile Include="BaseFeature\Opertion.py" />
+    <Compile Include="BaseFeature\ListTest.py" />
+    <Compile Include="BaseFeature\StringTest.py" />
+    <Compile Include="BaseFeature\variableTest.py" />
+    <Compile Include="module1.py" />
+    <Compile Include="PythonDemo.py" />
+    <Compile Include="SourceCode_Programming in Python 3\Abstract.py" />
+    <Compile Include="SourceCode_Programming in Python 3\Account.py" />
+    <Compile Include="SourceCode_Programming in Python 3\Appliance.py" />
+    <Compile Include="SourceCode_Programming in Python 3\Ascii.py" />
+    <Compile Include="SourceCode_Programming in Python 3\Atomic.py" />
+    <Compile Include="SourceCode_Programming in Python 3\average1_ans.py" />
+    <Compile Include="SourceCode_Programming in Python 3\average2_ans.py" />
+    <Compile Include="SourceCode_Programming in Python 3\awfulpoetry1_ans.py" />
+    <Compile Include="SourceCode_Programming in Python 3\awfulpoetry2_ans.py" />
+    <Compile Include="SourceCode_Programming in Python 3\base64image.py" />
+    <Compile Include="SourceCode_Programming in Python 3\BibTeX.py" />
+    <Compile Include="SourceCode_Programming in Python 3\bigdigits.py" />
+    <Compile Include="SourceCode_Programming in Python 3\bigdigits_ans.py" />
+    <Compile Include="SourceCode_Programming in Python 3\BikeStock.py" />
+    <Compile Include="SourceCode_Programming in Python 3\BikeStock_ans.py" />
+    <Compile Include="SourceCode_Programming in Python 3\BinaryRecordFile.py" />
+    <Compile Include="SourceCode_Programming in Python 3\BinaryRecordFile_ans.py" />
+    <Compile Include="SourceCode_Programming in Python 3\Block.py" />
+    <Compile Include="SourceCode_Programming in Python 3\BlockOutput.py" />
+    <Compile Include="SourceCode_Programming in Python 3\blocks.py" />
+    <Compile Include="SourceCode_Programming in Python 3\bookmarks-tk.pyw" />
+    <Compile Include="SourceCode_Programming in Python 3\bookmarks-tk_ans.pyw" />
+    <Compile Include="SourceCode_Programming in Python 3\bookmarks.py" />
+    <Compile Include="SourceCode_Programming in Python 3\capture.py" />
+    <Compile Include="SourceCode_Programming in Python 3\car_registration.py" />
+    <Compile Include="SourceCode_Programming in Python 3\car_registration_ans.py" />
+    <Compile Include="SourceCode_Programming in Python 3\car_registration_server.py" />
+    <Compile Include="SourceCode_Programming in Python 3\car_registration_server_ans.py" />
+    <Compile Include="SourceCode_Programming in Python 3\CharGrid.py" />
+    <Compile Include="SourceCode_Programming in Python 3\checktags.py" />
+    <Compile Include="SourceCode_Programming in Python 3\Circle.py" />
+    <Compile Include="SourceCode_Programming in Python 3\Console.py" />
+    <Compile Include="SourceCode_Programming in Python 3\Const.py" />
+    <Compile Include="SourceCode_Programming in Python 3\convert-incidents.py" />
+    <Compile Include="SourceCode_Programming in Python 3\csv2html.py" />
+    <Compile Include="SourceCode_Programming in Python 3\csv2html1_ans.py" />
+    <Compile Include="SourceCode_Programming in Python 3\csv2html2_ans.py" />
+    <Compile Include="SourceCode_Programming in Python 3\csv2html2_opt.py" />
+    <Compile Include="SourceCode_Programming in Python 3\digit_names.py" />
+    <Compile Include="SourceCode_Programming in Python 3\dvds-dbm.py" />
+    <Compile Include="SourceCode_Programming in Python 3\dvds-sql.py" />
+    <Compile Include="SourceCode_Programming in Python 3\echoargs.py" />
+    <Compile Include="SourceCode_Programming in Python 3\ExternalStorage.py" />
+    <Compile Include="SourceCode_Programming in Python 3\external_sites.py" />
+    <Compile Include="SourceCode_Programming in Python 3\external_sites_ans.py" />
+    <Compile Include="SourceCode_Programming in Python 3\extract_tags.py" />
+    <Compile Include="SourceCode_Programming in Python 3\find.py" />
+    <Compile Include="SourceCode_Programming in Python 3\finddup.py" />
+    <Compile Include="SourceCode_Programming in Python 3\findduplicates-m.py" />
+    <Compile Include="SourceCode_Programming in Python 3\findduplicates-t.py" />
+    <Compile Include="SourceCode_Programming in Python 3\findduplicates-t2.py" />
+    <Compile Include="SourceCode_Programming in Python 3\first-order-logic.py" />
+    <Compile Include="SourceCode_Programming in Python 3\FuzzyBool.py" />
+    <Compile Include="SourceCode_Programming in Python 3\FuzzyBoolAlt.py" />
+    <Compile Include="SourceCode_Programming in Python 3\generate_grid.py" />
+    <Compile Include="SourceCode_Programming in Python 3\generate_test_names1.py" />
+    <Compile Include="SourceCode_Programming in Python 3\generate_test_names2.py" />
+    <Compile Include="SourceCode_Programming in Python 3\generate_usernames.py" />
+    <Compile Include="SourceCode_Programming in Python 3\generate_usernames_ans.py" />
+    <Compile Include="SourceCode_Programming in Python 3\Graphics\Bmp.py" />
+    <Compile Include="SourceCode_Programming in Python 3\Graphics\Jpeg.py" />
+    <Compile Include="SourceCode_Programming in Python 3\Graphics\Png.py" />
+    <Compile Include="SourceCode_Programming in Python 3\Graphics\Tiff.py" />
+    <Compile Include="SourceCode_Programming in Python 3\Graphics\Vector\Eps.py" />
+    <Compile Include="SourceCode_Programming in Python 3\Graphics\Vector\Svg.py" />
+    <Compile Include="SourceCode_Programming in Python 3\Graphics\Vector\__init__.py" />
+    <Compile Include="SourceCode_Programming in Python 3\Graphics\Xpm.py" />
+    <Compile Include="SourceCode_Programming in Python 3\Graphics\__init__.py" />
+    <Compile Include="SourceCode_Programming in Python 3\grepword-m.py" />
+    <Compile Include="SourceCode_Programming in Python 3\grepword-p-child.py" />
+    <Compile Include="SourceCode_Programming in Python 3\grepword-p.py" />
+    <Compile Include="SourceCode_Programming in Python 3\grepword-p_ans.py" />
+    <Compile Include="SourceCode_Programming in Python 3\grepword-t.py" />
+    <Compile Include="SourceCode_Programming in Python 3\grepword.py" />
+    <Compile Include="SourceCode_Programming in Python 3\hello.py" />
+    <Compile Include="SourceCode_Programming in Python 3\html2text.py" />
+    <Compile Include="SourceCode_Programming in Python 3\Image.py" />
+    <Compile Include="SourceCode_Programming in Python 3\Image_ans.py" />
+    <Compile Include="SourceCode_Programming in Python 3\IndentedList.py" />
+    <Compile Include="SourceCode_Programming in Python 3\interest-tk.pyw" />
+    <Compile Include="SourceCode_Programming in Python 3\listkeeper.py" />
+    <Compile Include="SourceCode_Programming in Python 3\ls.py" />
+    <Compile Include="SourceCode_Programming in Python 3\magic-numbers.py" />
+    <Compile Include="SourceCode_Programming in Python 3\magic-numbers_ans.py" />
+    <Compile Include="SourceCode_Programming in Python 3\make_html_skeleton.py" />
+    <Compile Include="SourceCode_Programming in Python 3\Meta.py" />
+    <Compile Include="SourceCode_Programming in Python 3\noblanks.py" />
+    <Compile Include="SourceCode_Programming in Python 3\phone.py" />
+    <Compile Include="SourceCode_Programming in Python 3\playlists.py" />
+    <Compile Include="SourceCode_Programming in Python 3\print_unicode.py" />
+    <Compile Include="SourceCode_Programming in Python 3\print_unicode_ans.py" />
+    <Compile Include="SourceCode_Programming in Python 3\print_unicode_uni.py" />
+    <Compile Include="SourceCode_Programming in Python 3\print_unicode_uni_ans.py" />
+    <Compile Include="SourceCode_Programming in Python 3\Property.py" />
+    <Compile Include="SourceCode_Programming in Python 3\quadratic.py" />
+    <Compile Include="SourceCode_Programming in Python 3\quadratic_ans.py" />
+    <Compile Include="SourceCode_Programming in Python 3\quadratic_uni.py" />
+    <Compile Include="SourceCode_Programming in Python 3\quadratic_uni_ans.py" />
+    <Compile Include="SourceCode_Programming in Python 3\ReadKeyValue.py" />
+    <Compile Include="SourceCode_Programming in Python 3\ReadM3U.py" />
+    <Compile Include="SourceCode_Programming in Python 3\regex-tk.pyw" />
+    <Compile Include="SourceCode_Programming in Python 3\Shape.py" />
+    <Compile Include="SourceCode_Programming in Python 3\ShapeAlt.py" />
+    <Compile Include="SourceCode_Programming in Python 3\ShapeAlt_ans.py" />
+    <Compile Include="SourceCode_Programming in Python 3\Shape_ans.py" />
+    <Compile Include="SourceCode_Programming in Python 3\SortedDict.py" />
+    <Compile Include="SourceCode_Programming in Python 3\SortedList.py" />
+    <Compile Include="SourceCode_Programming in Python 3\SortedListAbc.py" />
+    <Compile Include="SourceCode_Programming in Python 3\SortedListDelegate.py" />
+    <Compile Include="SourceCode_Programming in Python 3\SortedListMeta.py" />
+    <Compile Include="SourceCode_Programming in Python 3\SortKey.py" />
+    <Compile Include="SourceCode_Programming in Python 3\StandardMagicNumbers.py" />
+    <Compile Include="SourceCode_Programming in Python 3\statistics.py" />
+    <Compile Include="SourceCode_Programming in Python 3\sum1.py" />
+    <Compile Include="SourceCode_Programming in Python 3\sum2.py" />
+    <Compile Include="SourceCode_Programming in Python 3\test_Atomic.py" />
+    <Compile Include="SourceCode_Programming in Python 3\test_blocks.py" />
+    <Compile Include="SourceCode_Programming in Python 3\test_Modules.py" />
+    <Compile Include="SourceCode_Programming in Python 3\TextFilter.py" />
+    <Compile Include="SourceCode_Programming in Python 3\TextUtil.py" />
+    <Compile Include="SourceCode_Programming in Python 3\uniquewords1.py" />
+    <Compile Include="SourceCode_Programming in Python 3\uniquewords2.py" />
+    <Compile Include="SourceCode_Programming in Python 3\uniquewords_ans.py" />
+    <Compile Include="SourceCode_Programming in Python 3\untar.py" />
+    <Compile Include="SourceCode_Programming in Python 3\Util.py" />
+    <Compile Include="SourceCode_Programming in Python 3\Valid.py" />
+    <Compile Include="SourceCode_Programming in Python 3\WindowsMagicNumbers.py" />
+    <Compile Include="SourceCode_Programming in Python 3\xdump.py" />
+    <Compile Include="SourceCode_Programming in Python 3\XmlShadow.py" />
+    <Compile Include="SourceCode_Programming in Python 3\xmlsummary.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="structurFeature\" />
+    <Folder Include="BaseFeature\" />
+    <Folder Include="SourceCode_Programming in Python 3\" />
+    <Folder Include="SourceCode_Programming in Python 3\data\" />
+    <Folder Include="SourceCode_Programming in Python 3\Graphics\" />
+    <Folder Include="SourceCode_Programming in Python 3\Graphics\Vector\" />
+    <Folder Include="SourceCode_Programming in Python 3\images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{9a7a9026-48c1-4688-9d5d-e5699d47d074}\3.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SourceCode_Programming in Python 3\data\co2-from-fossilfuels.csv" />
+    <Content Include="SourceCode_Programming in Python 3\data\co2-sample.csv" />
+    <Content Include="SourceCode_Programming in Python 3\data\forenames.txt" />
+    <Content Include="SourceCode_Programming in Python 3\data\incidents.aix" />
+    <Content Include="SourceCode_Programming in Python 3\data\phone.txt" />
+    <Content Include="SourceCode_Programming in Python 3\data\statistics.dat" />
+    <Content Include="SourceCode_Programming in Python 3\data\sum2.dat" />
+    <Content Include="SourceCode_Programming in Python 3\data\surnames.txt" />
+    <Content Include="SourceCode_Programming in Python 3\data\users.txt" />
+    <Content Include="SourceCode_Programming in Python 3\data\users2.txt" />
+    <Content Include="SourceCode_Programming in Python 3\dvds.xml" />
+    <Content Include="SourceCode_Programming in Python 3\gpl-3.0.txt" />
+    <Content Include="SourceCode_Programming in Python 3\images\bookmark.ico" />
+    <Content Include="SourceCode_Programming in Python 3\images\currency.ico" />
+    <Content Include="SourceCode_Programming in Python 3\images\editadd.gif" />
+    <Content Include="SourceCode_Programming in Python 3\images\editdelete.gif" />
+    <Content Include="SourceCode_Programming in Python 3\images\editedit.gif" />
+    <Content Include="SourceCode_Programming in Python 3\images\editshowwebpage.gif" />
+    <Content Include="SourceCode_Programming in Python 3\images\fileexport.gif" />
+    <Content Include="SourceCode_Programming in Python 3\images\fileimport.gif" />
+    <Content Include="SourceCode_Programming in Python 3\images\filenew.gif" />
+    <Content Include="SourceCode_Programming in Python 3\images\fileopen.gif" />
+    <Content Include="SourceCode_Programming in Python 3\images\filesave.gif" />
+    <Content Include="SourceCode_Programming in Python 3\images\interest.ico" />
+    <Content Include="SourceCode_Programming in Python 3\images\regex.ico" />
+    <Content Include="SourceCode_Programming in Python 3\images\Thumbs.db" />
+    <Content Include="SourceCode_Programming in Python 3\README.txt" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <PtvsTargetsFile>$(VSToolsPath)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <Import Condition="Exists($(PtvsTargetsFile))" Project="$(PtvsTargetsFile)" />
+  <Import Condition="!Exists($(PtvsTargetsFile))" Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+</Project>

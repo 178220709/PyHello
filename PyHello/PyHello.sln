@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PyHello", "PyHello\PyHello.pyproj", "{AAE5C214-4605-4B0B-AFC5-53A871C30B30}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PythonDemo", "PythonDemo\PythonDemo.pyproj", "{F66E30E7-B5BA-4275-A173-59094AA0722F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,8 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{AAE5C214-4605-4B0B-AFC5-53A871C30B30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AAE5C214-4605-4B0B-AFC5-53A871C30B30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F66E30E7-B5BA-4275-A173-59094AA0722F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F66E30E7-B5BA-4275-A173-59094AA0722F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
