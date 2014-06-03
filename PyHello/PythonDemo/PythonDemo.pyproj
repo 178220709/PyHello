@@ -24,21 +24,31 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="BaseFeature\DocString.py" />
-    <Compile Include="BaseFeature\zoo.py" />
-    <Compile Include="BaseFeature\Key.py" />
-    <Compile Include="BaseFeature\function.py" />
-    <Compile Include="BaseFeature\module1.py" />
+    <Compile Include="BaseFeature\class\StaticClass.py" />
+    <Compile Include="BaseFeature\class\class_init - Copy.py" />
+    <Compile Include="BaseFeature\class\objvar.py" />
+    <Compile Include="BaseFeature\class\class_init.py" />
+    <Compile Include="BaseFeature\class\method.py" />
+    <Compile Include="BaseFeature\class\simplestclass.py" />
+    <Compile Include="BaseFeature\feature\DocString.py" />
+    <Compile Include="BaseFeature\file\using_file - Copy %282%29.py" />
+    <Compile Include="BaseFeature\file\pickling.py" />
+    <Compile Include="BaseFeature\file\using_file.py" />
+    <Compile Include="BaseFeature\feature\zoo.py" />
+    <Compile Include="BaseFeature\feature\Key.py" />
+    <Compile Include="BaseFeature\feature\function.py" />
+    <Compile Include="BaseFeature\feature\module1.py" />
+    <Compile Include="MyProject\ZipBakup\backup_ver1.py" />
     <Compile Include="structurFeature\mymodule_demo.py" />
     <Compile Include="structurFeature\MyDemo.py" />
     <Compile Include="structurFeature\using_sys.py" />
     <Compile Include="structurFeature\using_name.py" />
     <Compile Include="structurFeature\mymodule_demo2.py" />
     <Compile Include="structurFeature\mymodule.py" />
-    <Compile Include="BaseFeature\Opertion.py" />
-    <Compile Include="BaseFeature\ListTest.py" />
-    <Compile Include="BaseFeature\StringTest.py" />
-    <Compile Include="BaseFeature\variableTest.py" />
+    <Compile Include="BaseFeature\feature\Opertion.py" />
+    <Compile Include="BaseFeature\feature\ListTest.py" />
+    <Compile Include="BaseFeature\feature\StringTest.py" />
+    <Compile Include="BaseFeature\feature\variableTest.py" />
     <Compile Include="module1.py" />
     <Compile Include="PythonDemo.py" />
     <Compile Include="SourceCode_Programming in Python 3\Abstract.py" />
@@ -173,6 +183,11 @@
     <Compile Include="SourceCode_Programming in Python 3\xmlsummary.py" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="BaseFeature\class\" />
+    <Folder Include="BaseFeature\file\" />
+    <Folder Include="BaseFeature\feature\" />
+    <Folder Include="MyProject\ZipBakup\" />
+    <Folder Include="MyProject\" />
     <Folder Include="structurFeature\" />
     <Folder Include="BaseFeature\" />
     <Folder Include="SourceCode_Programming in Python 3\" />
