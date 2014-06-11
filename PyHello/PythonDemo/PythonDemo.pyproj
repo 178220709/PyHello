@@ -30,6 +30,14 @@
     <Compile Include="BaseFeature\class\class_init.py" />
     <Compile Include="BaseFeature\class\method.py" />
     <Compile Include="BaseFeature\class\simplestclass.py" />
+    <Compile Include="BaseFeature\pyLib\assert - Copy.py" />
+    <Compile Include="BaseFeature\pyLib\assert.py" />
+    <Compile Include="BaseFeature\pyLib\exec.py" />
+    <Compile Include="BaseFeature\pyLib\specialMethod.py" />
+    <Compile Include="BaseFeature\pyLib\cat.py" />
+    <Compile Include="BaseFeature\pyLib\lambda.py" />
+    <Compile Include="BaseFeature\try\finally.py" />
+    <Compile Include="BaseFeature\try\except.py" />
     <Compile Include="BaseFeature\feature\DocString.py" />
     <Compile Include="BaseFeature\file\using_file - Copy %282%29.py" />
     <Compile Include="BaseFeature\file\pickling.py" />
@@ -38,6 +46,10 @@
     <Compile Include="BaseFeature\feature\Key.py" />
     <Compile Include="BaseFeature\feature\function.py" />
     <Compile Include="BaseFeature\feature\module1.py" />
+    <Compile Include="MyProject\crawlers\backup_ver1.py" />
+    <Compile Include="MyProject\String\printFix\printFix - Copy %282%29.py" />
+    <Compile Include="MyProject\String\printFix\stringMethodDemo.py" />
+    <Compile Include="MyProject\String\printFix\printFix.py" />
     <Compile Include="MyProject\ZipBakup\backup_ver1.py" />
     <Compile Include="structurFeature\mymodule_demo.py" />
     <Compile Include="structurFeature\MyDemo.py" />
@@ -186,6 +198,11 @@
     <Folder Include="BaseFeature\class\" />
     <Folder Include="BaseFeature\file\" />
     <Folder Include="BaseFeature\feature\" />
+    <Folder Include="BaseFeature\pyLib\" />
+    <Folder Include="BaseFeature\try\" />
+    <Folder Include="MyProject\crawlers\" />
+    <Folder Include="MyProject\String\printFix\" />
+    <Folder Include="MyProject\String\" />
     <Folder Include="MyProject\ZipBakup\" />
     <Folder Include="MyProject\" />
     <Folder Include="structurFeature\" />
