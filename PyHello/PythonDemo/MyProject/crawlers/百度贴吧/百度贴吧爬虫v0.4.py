@@ -46,8 +46,8 @@ class Baidu_Spider:
         self.myUrl = url + '?see_lz=1'
         self.datas = []
         self.myTool = HTML_Tool()
-        print u'已经启动百度贴吧爬虫，咔嚓咔嚓'
-  
+        print ( u'已经启动百度贴吧爬虫，咔嚓咔嚓'
+)  
     # 初始化加载页面并将其转码储存
     def baidu_tieba(self):
         # 读取页面的原始信息并将其从gbk转码
@@ -56,8 +56,8 @@ class Baidu_Spider:
         endPage = self.page_counter(myPage)
         # 获取该帖的标题
         title = self.find_title(myPage)
-        print u'文章名称：' + title
-        # 获取最终的数据
+        print ( u'文章名称：' + title
+)        # 获取最终的数据
         self.save_data(self.myUrl,title,endPage)
 
     #用来计算一共有多少页
@@ -66,10 +66,10 @@ class Baidu_Spider:
         myMatch = re.search(r'class="red">(\d+?)</span>', myPage, re.S)
         if myMatch:  
             endPage = int(myMatch.group(1))
-            print u'爬虫报告：发现楼主共有%d页的原创内容' % endPage
+            print ( u'爬虫报告：发现楼主共有%d页的原创内容' % endPage)
         else:
             endPage = 0
-            print u'爬虫报告：无法计算楼主发布内容有多少页！'
+            print ( u'爬虫报告：无法计算楼主发布内容有多少页！')
         return endPage
 
     # 用来寻找该帖的标题
@@ -80,8 +80,8 @@ class Baidu_Spider:
         if myMatch:
             title  = myMatch.group(1)
         else:
-            print u'爬虫报告：无法加载文章标题！'
-        # 文件名不能包含以下字符： \ / ： * ? " < > |
+            print ( u'爬虫报告：无法加载文章标题！'
+)        # 文件名不能包含以下字符： \ / ： * ? " < > |
         title = title.replace('\\','').replace('/','').replace(':','').replace('*','').replace('?','').replace('"','').replace('>','').replace('<','').replace('|','')
         return title
 
@@ -99,7 +99,7 @@ class Baidu_Spider:
     def get_data(self,url,endPage):
         url = url + '&pn='
         for i in range(1,endPage+1):
-            print u'爬虫报告：爬虫%d号正在加载中...' % i
+            print ( u'爬虫报告：爬虫%d号正在加载中...' % i)
             myPage = urllib2.urlopen(url + str(i)).read()
             # 将myPage中的html代码处理并存储到datas里面
             self.deal_data(myPage.decode('gbk'))
@@ -115,7 +115,7 @@ class Baidu_Spider:
 
 
 #-------- 程序入口处 ------------------
-print u"""#---------------------------------------
+print (u"""#---------------------------------------
 #   程序：百度贴吧爬虫
 #   版本：0.4
 #   作者：why
@@ -124,13 +124,13 @@ print u"""#---------------------------------------
 #   操作：输入网址后自动只看楼主并保存到本地文件
 #   功能：将楼主发布的内容打包txt存储到本地。
 #---------------------------------------
-"""
+""")
 
 # 以某小说贴吧为例子
 # bdurl = 'http://tieba.baidu.com/p/2296712428?see_lz=1&pn=1'
 
-print u'格式：http://tieba.baidu.com/p/xxxxxxxxxx'
-print u'请输入贴吧的地址：'
+print (u'格式：http://tieba.baidu.com/p/xxxxxxxxxx')
+print (u'请输入贴吧的地址：')
 bdurl = str(raw_input(u' ')) 
  
 

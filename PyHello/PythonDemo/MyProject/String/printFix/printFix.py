@@ -6,10 +6,12 @@ def printPath(level, path):
     '''
     打印一个目录下的所有文件夹和文件
     '''
-    # 所有文件夹，第一个字段是次目录的级别
+    # 所有文件夹，第一个字段是次目录的级别 
     dirList = []
     # 所有文件
-    fileList = []
+    fileList = []  
+    # 所有文件 包含路径
+    filePathList = []
     # 返回一个列表，其中包含在目录条目的名称(google翻译)
     files = os.listdir(path)
     # 先添加目录级别
@@ -25,6 +27,7 @@ def printPath(level, path):
         if(os.path.isfile(path + '/' + f)):
             # 添加文件
             fileList.append(f)
+            filePathList.append(path + '/' + f)
     # 当一个标志使用，文件夹列表第一个级别不打印
     i_dl = 0
     for dl in dirList:
@@ -38,16 +41,33 @@ def printPath(level, path):
     for fl in fileList:
         # 打印文件
         print ('-' * (int(dirList[0])), fl)
+        #fixPrint(fl)
         # 随便计算一下有多少个文件
         allFileNum = allFileNum + 1
-
+    for fl in filePathList:
+       fixPrint(fl)
 def fixPrint(path):
     file  = open(path,"r",encoding="utf-8")
+    newLines = [];
     all_the_text = file.readlines( )
     for line in all_the_text:
-        if(line.index("print")>0):
-            line="hhh"
+        index = line.find("print")
+        #检查当前行是否有print 同时是否已经有()了
+        if(index>=0 and line[index+5:index+8].find('(')==-1):
+            #对有print的数据进行处理,
+            line = line.replace("print","print (") 
+            if(line.find("\n")>0):
+                 line =  line.replace("\n"," )" +"\n") 
+            else:
+                line+=")"
+        newLines.append(line)
     file.close()
+
+     #直接覆盖掉原来的文件 
+    newFile = open(path,"w",encoding="utf-8")
+    for line in newLines:
+      newFile.write(line)
+    newFile.close()
 
 if __name__ == '__main__':
    
@@ -55,8 +75,7 @@ if __name__ == '__main__':
     crawlersAP = os.path.join(  BASE_DIR, '../..' , "crawlers")
     crawlersPath = os.path.abspath(crawlersAP)
 
-    py = os.path.join(  crawlersPath, "百度贴吧", "百度贴吧爬虫v0.1.py")
+    py = os.path.join(  crawlersPath, "百度贴吧", "123.py")
     fixPrint(py)
-    #file_path = os.path.join(BASE_DIR, 'Test_Data') #获取当前文件夹内的Test_Data文件
     printPath(1, crawlersPath)
     print ('总文件数 =', allFileNum)

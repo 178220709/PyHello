@@ -85,14 +85,14 @@ class HTML_Model:
                     self.page += 1  
                     self.pages.append(myPage)  
                 except:  
-                    print '无法链接糗事百科！'  
+                    print ( '无法链接糗事百科！'  )
             else:  
                 time.sleep(1)  
           
     def ShowPage(self,q,page):  
         for items in q:  
-            print u'第%d页' % page , items[0]  
-            print self.myTool.Replace_Char(items[1])  
+            print ( u'第%d页' % page , items[0]  )
+            print ( self.myTool.Replace_Char(items[1])  )
             myInput = raw_input()  
             if myInput == "quit":  
                 self.enable = False  
@@ -102,8 +102,8 @@ class HTML_Model:
         self.enable = True  
         page = self.page  
   
-        print u'正在加载中请稍候......'  
-          
+        print ( u'正在加载中请稍候......'  
+)          
         # 新建一个线程在后台加载段子并存储  
         thread.start_new_thread(self.LoadPage,())  
           
@@ -118,7 +118,7 @@ class HTML_Model:
   
   
 #----------- 程序的入口处 -----------  
-print u""" 
+print (u""" 
 --------------------------------------- 
    程序：糗百爬虫 
    版本：0.1 
@@ -128,10 +128,10 @@ print u"""
    操作：输入quit退出阅读糗事百科 
    功能：按下回车依次浏览今日的糗百热点 
 --------------------------------------- 
-"""  
+"""  )
   
   
-print u'请按下回车浏览今日的糗百内容：'  
+print (u'请按下回车浏览今日的糗百内容：'  )
 raw_input(' ')  
 myModel = HTML_Model()  
 myModel.Start()  

@@ -47,6 +47,13 @@
     <Compile Include="BaseFeature\feature\function.py" />
     <Compile Include="BaseFeature\feature\module1.py" />
     <Compile Include="MyProject\crawlers\backup_ver1.py" />
+    <Compile Include="MyProject\crawlers\百度贴吧\百度贴吧爬虫v0.1.py" />
+    <Compile Include="MyProject\crawlers\百度贴吧\百度贴吧爬虫v0.2.py" />
+    <Compile Include="MyProject\crawlers\百度贴吧\百度贴吧爬虫v0.3.py" />
+    <Compile Include="MyProject\crawlers\百度贴吧\百度贴吧爬虫v0.4.py" />
+    <Compile Include="MyProject\crawlers\百度贴吧\百度贴吧爬虫v0.5.py" />
+    <Compile Include="MyProject\crawlers\糗事百科\糗事百科爬虫v0.1.py" />
+    <Compile Include="MyProject\crawlers\糗事百科\糗事百科爬虫v0.2.py" />
     <Compile Include="MyProject\String\printFix\printFix - Copy %282%29.py" />
     <Compile Include="MyProject\String\printFix\stringMethodDemo.py" />
     <Compile Include="MyProject\String\printFix\printFix.py" />
@@ -201,6 +208,8 @@
     <Folder Include="BaseFeature\pyLib\" />
     <Folder Include="BaseFeature\try\" />
     <Folder Include="MyProject\crawlers\" />
+    <Folder Include="MyProject\crawlers\百度贴吧\" />
+    <Folder Include="MyProject\crawlers\糗事百科\" />
     <Folder Include="MyProject\String\printFix\" />
     <Folder Include="MyProject\String\" />
     <Folder Include="MyProject\ZipBakup\" />

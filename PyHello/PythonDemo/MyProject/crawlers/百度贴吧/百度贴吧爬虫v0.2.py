@@ -38,10 +38,10 @@ class Baidu_Spider:
         myMatch = re.search(r'class="red">(\d\d)</span>', myPage, re.S)
         if myMatch:  
             endPage = int(myMatch.group(1))
-            print u'楼主一共发布了%d页的内容' % endPage
+            print ( u'楼主一共发布了%d页的内容' % endPage)        
         else:
             endPage = 1
-            print u'无法计算楼主发布内容有多少页！'
+            print ( u'无法计算楼主发布内容有多少页！')
         return endPage
 
     # 用来存储楼主发布的内容
@@ -49,14 +49,14 @@ class Baidu_Spider:
         url = url + '&pn='
         for i in range(1,endPage+1):
             sName = string.zfill(i,5) + '.html'#自动填充成六位的文件名
-            print u'正在下载第' + str(i) + u'个网页，并将其存储为' + sName + '......'
+            print ( u'正在下载第' + str(i) + u'个网页，并将其存储为' + sName + '......')
             f = open(sName,'w+')
             m = urllib2.urlopen(url + str(i)).read()
             f.write(m)
             f.close()
  
 #-------- 在这里输入参数 ------------------
-print u"""#---------------------------------------
+print (u"""#---------------------------------------
 #   程序：百度贴吧爬虫
 #   版本：0.2
 #   作者：why
@@ -65,13 +65,12 @@ print u"""#---------------------------------------
 #   操作：输入网址后自动只看楼主并保存到本地文件
 #   功能：下载楼主的所有发帖并存储为txt。
 #---------------------------------------
-"""
+""")
 
 # 以某小说贴吧为例子
 # bdurl = 'http://tieba.baidu.com/p/2296712428?see_lz=1&pn=1'
 
-print u'例如：http://tieba.baidu.com/p/2296712428'
-print u'请输入贴吧的地址：'
+print (u'例如：http://tieba.baidu.com/p/2296712428   /n 请输入贴吧的地址：')
 bdurl = str(raw_input(u' ')) 
 
 #-------- 在这里输入参数 ------------------

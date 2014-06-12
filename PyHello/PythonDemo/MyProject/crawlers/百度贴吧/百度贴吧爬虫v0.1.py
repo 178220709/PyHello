@@ -15,7 +15,7 @@ import string, urllib2
 def baidu_tieba(url,begin_page,end_page):   
     for i in range(begin_page, end_page+1):
         sName = string.zfill(i,5) + '.html'#自动填充成六位的文件名
-        print u'正在下载第' + str(i) + u'个网页，并将其存储为' + sName + '......'
+        print ( u'正在下载第' + str(i) + u'个网页，并将其存储为' + sName + '......')
         f = open(sName,'w+')
         m = urllib2.urlopen(url + str(i)).read()
         f.write(m)
@@ -42,12 +42,12 @@ print (u"""#---------------------------------------
 
 
 
-print u'例如：http://tieba.baidu.com/p/2296017831?pn='
-print u'请输入贴吧的地址，去掉pn=后面的数字：'
+print (u'例如：http://tieba.baidu.com/p/2296017831?pn=')
+print (u'请输入贴吧的地址，去掉pn=后面的数字：')
 bdurl = str(raw_input(u' '))
-print u'请输入开始的页数：'
+print (u'请输入开始的页数：')
 begin_page = int(raw_input(u' '))
-print u'请输入终点的页数：'
+print (u'请输入终点的页数：')
 end_page = int(raw_input(u' '))
 #-------- 在这里输入参数 ------------------
  
