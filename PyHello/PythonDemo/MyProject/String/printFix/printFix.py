@@ -1,4 +1,3 @@
-
 import os
 allFileNum = 0
 def printPath(level, path):
