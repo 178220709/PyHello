@@ -11,7 +11,7 @@ def printPath(level, path):
     fileList = []  
     # 所有文件 包含路径
     filePathList = []
-    # 返回一个列表，其中包含在目录条目的名称(google翻译)
+    # 返回一个列表，其中包含在目录条目的名称(google翻译) 
     files = os.listdir(path)
     # 先添加目录级别
     dirList.append(str(level))

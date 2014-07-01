@@ -54,6 +54,7 @@
     <Compile Include="MyProject\Internet\crawlers\百度贴吧\百度贴吧爬虫v0.5.py" />
     <Compile Include="MyProject\Internet\crawlers\糗事百科\糗事百科爬虫v0.1.py" />
     <Compile Include="MyProject\Internet\crawlers\糗事百科\糗事百科爬虫v0.2.py" />
+    <Compile Include="MyProject\Internet\Goagent\checkgoogleip-master\checkip.py" />
     <Compile Include="MyProject\Internet\Goagent\get_rand_ip.py" />
     <Compile Include="MyProject\String\printFix\printFix - Copy %282%29.py" />
     <Compile Include="MyProject\String\printFix\stringMethodDemo.py" />
@@ -213,6 +214,7 @@
     <Folder Include="MyProject\Internet\crawlers\糗事百科\" />
     <Folder Include="MyProject\Internet\" />
     <Folder Include="MyProject\Internet\Goagent\" />
+    <Folder Include="MyProject\Internet\Goagent\checkgoogleip-master\" />
     <Folder Include="MyProject\String\printFix\" />
     <Folder Include="MyProject\String\" />
     <Folder Include="MyProject\ZipBakup\" />
@@ -229,6 +231,7 @@
     <InterpreterReference Include="{9a7a9026-48c1-4688-9d5d-e5699d47d074}\3.4" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MyProject\Internet\Goagent\checkgoogleip-master\cacert.pem" />
     <Content Include="SourceCode_Programming in Python 3\data\co2-from-fossilfuels.csv" />
     <Content Include="SourceCode_Programming in Python 3\data\co2-sample.csv" />
     <Content Include="SourceCode_Programming in Python 3\data\forenames.txt" />
