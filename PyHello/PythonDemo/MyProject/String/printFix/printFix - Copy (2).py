@@ -3,45 +3,45 @@ allFileNum = 0
 def printPath(level, path):
     global allFileNum
     '''
-    ´òÓ¡Ò»¸öÄ¿Â¼ÏÂµÄËùÓĞÎÄ¼ş¼ĞºÍÎÄ¼ş
+    æ‰“å°ä¸€ä¸ªç›®å½•ä¸‹çš„æ‰€æœ‰æ–‡ä»¶å¤¹å’Œæ–‡ä»¶
     '''
-    # ËùÓĞÎÄ¼ş¼Ğ£¬µÚÒ»¸ö×Ö¶ÎÊÇ´ÎÄ¿Â¼µÄ¼¶±ğ 
+    # æ‰€æœ‰æ–‡ä»¶å¤¹ï¼Œç¬¬ä¸€ä¸ªå­—æ®µæ˜¯æ¬¡ç›®å½•çš„çº§åˆ« 
     dirList = []
-    # ËùÓĞÎÄ¼ş
+    # æ‰€æœ‰æ–‡ä»¶
     fileList = []  
-    # ËùÓĞÎÄ¼ş °üº¬Â·¾¶
+    # æ‰€æœ‰æ–‡ä»¶ åŒ…å«è·¯å¾„
     filePathList = []
-    # ·µ»ØÒ»¸öÁĞ±í£¬ÆäÖĞ°üº¬ÔÚÄ¿Â¼ÌõÄ¿µÄÃû³Æ(google·­Òë)
+    # è¿”å›ä¸€ä¸ªåˆ—è¡¨ï¼Œå…¶ä¸­åŒ…å«åœ¨ç›®å½•æ¡ç›®çš„åç§°(googleç¿»è¯‘) 
     files = os.listdir(path)
-    # ÏÈÌí¼ÓÄ¿Â¼¼¶±ğ
+    # å…ˆæ·»åŠ ç›®å½•çº§åˆ«
     dirList.append(str(level))
     for f in files:
         if(os.path.isdir(path + '/' + f)):
-            # ÅÅ³ıÒş²ØÎÄ¼ş¼Ğ¡£ÒòÎªÒş²ØÎÄ¼ş¼Ğ¹ı¶à
+            # æ’é™¤éšè—æ–‡ä»¶å¤¹ã€‚å› ä¸ºéšè—æ–‡ä»¶å¤¹è¿‡å¤š
             if(f[0] == '.'):
                 pass
             else:
-                # Ìí¼Ó·ÇÒş²ØÎÄ¼ş¼Ğ
+                # æ·»åŠ ééšè—æ–‡ä»¶å¤¹
                 dirList.append(f)
         if(os.path.isfile(path + '/' + f)):
-            # Ìí¼ÓÎÄ¼ş
+            # æ·»åŠ æ–‡ä»¶
             fileList.append(f)
             filePathList.append(path + '/' + f)
-    # µ±Ò»¸ö±êÖ¾Ê¹ÓÃ£¬ÎÄ¼ş¼ĞÁĞ±íµÚÒ»¸ö¼¶±ğ²»´òÓ¡
+    # å½“ä¸€ä¸ªæ ‡å¿—ä½¿ç”¨ï¼Œæ–‡ä»¶å¤¹åˆ—è¡¨ç¬¬ä¸€ä¸ªçº§åˆ«ä¸æ‰“å°
     i_dl = 0
     for dl in dirList:
         if(i_dl == 0):
             i_dl = i_dl + 1
         else:
-            # ´òÓ¡ÖÁ¿ØÖÆÌ¨£¬²»ÊÇµÚÒ»¸öµÄÄ¿Â¼
+            # æ‰“å°è‡³æ§åˆ¶å°ï¼Œä¸æ˜¯ç¬¬ä¸€ä¸ªçš„ç›®å½•
             print ('-' * (int(dirList[0])), dl)
-            # ´òÓ¡Ä¿Â¼ÏÂµÄËùÓĞÎÄ¼ş¼ĞºÍÎÄ¼ş£¬Ä¿Â¼¼¶±ğ+1
+            # æ‰“å°ç›®å½•ä¸‹çš„æ‰€æœ‰æ–‡ä»¶å¤¹å’Œæ–‡ä»¶ï¼Œç›®å½•çº§åˆ«+1
             printPath((int(dirList[0]) + 1), path + '/' + dl)
     for fl in fileList:
-        # ´òÓ¡ÎÄ¼ş
+        # æ‰“å°æ–‡ä»¶
         print ('-' * (int(dirList[0])), fl)
         #fixPrint(fl)
-        # Ëæ±ã¼ÆËãÒ»ÏÂÓĞ¶àÉÙ¸öÎÄ¼ş
+        # éšä¾¿è®¡ç®—ä¸€ä¸‹æœ‰å¤šå°‘ä¸ªæ–‡ä»¶
         allFileNum = allFileNum + 1
     for fl in filePathList:
        fixPrint(fl)
@@ -51,9 +51,9 @@ def fixPrint(path):
     all_the_text = file.readlines( )
     for line in all_the_text:
         index = line.find("print")
-        #¼ì²éµ±Ç°ĞĞÊÇ·ñÓĞprint Í¬Ê±ÊÇ·ñÒÑ¾­ÓĞ()ÁË
+        #æ£€æŸ¥å½“å‰è¡Œæ˜¯å¦æœ‰print åŒæ—¶æ˜¯å¦å·²ç»æœ‰()äº†
         if(index>=0 and line[index+5:index+8].find('(')==-1):
-            #¶ÔÓĞprintµÄÊı¾İ½øĞĞ´¦Àí,
+            #å¯¹æœ‰printçš„æ•°æ®è¿›è¡Œå¤„ç†,
             line = line.replace("print","print (") 
             if(line.find("\n")>0):
                  line =  line.replace("\n"," )" +"\n") 
@@ -62,7 +62,7 @@ def fixPrint(path):
         newLines.append(line)
     file.close()
 
-     #Ö±½Ó¸²¸ÇµôÔ­À´µÄÎÄ¼ş 
+     #ç›´æ¥è¦†ç›–æ‰åŸæ¥çš„æ–‡ä»¶ 
     newFile = open(path,"w",encoding="utf-8")
     for line in newLines:
       newFile.write(line)
@@ -70,11 +70,11 @@ def fixPrint(path):
 
 if __name__ == '__main__':
    
-    BASE_DIR = os.path.dirname(__file__) #»ñÈ¡µ±Ç°ÎÄ¼ş¼ĞµÄ¾ø¶ÔÂ·¾¶
+    BASE_DIR = os.path.dirname(__file__) #è·å–å½“å‰æ–‡ä»¶å¤¹çš„ç»å¯¹è·¯å¾„
     crawlersAP = os.path.join(  BASE_DIR, '../..' , "crawlers")
     crawlersPath = os.path.abspath(crawlersAP)
 
-    py = os.path.join(  crawlersPath, "°Ù¶ÈÌù°É", "123.py")
+    py = os.path.join(  crawlersPath, "ç™¾åº¦è´´å§", "123.py")
     fixPrint(py)
     printPath(1, crawlersPath)
-    print ('×ÜÎÄ¼şÊı =', allFileNum)
+    print ('æ€»æ–‡ä»¶æ•° =', allFileNum)
