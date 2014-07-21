@@ -1,4 +1,4 @@
-import os
+﻿import os
 allFileNum = 0
 def printPath(level, path):
     global allFileNum
