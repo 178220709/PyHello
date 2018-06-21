@@ -11,7 +11,7 @@ print (twice(5))
 print ('word'*5)
 
 def powersum(power, *args):
-    '''Return the sum of each argument raised to specified power.'''
+    """Return the sum of each argument raised to specified power."""
     total = 0
     for i in args:
         total += pow(i, power)

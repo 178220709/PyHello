@@ -2,11 +2,11 @@
 # Filename: objvar.py
 
 class Person:
-    '''Represents a person.'''
+    """Represents a person."""
     population = 0
 
     def __init__(self, name):
-        '''Initializes the person's data.'''
+        """Initializes the person's data."""
         self.name = name
         print('(Initializing %s)' % self.name)
 
@@ -15,7 +15,7 @@ class Person:
         Person.population += 1
 
     def __del__(self):
-        '''I am dying.'''
+        """I am dying."""
         print('%s says bye.' % self.name)
 
         Person.population -= 1
@@ -26,12 +26,12 @@ class Person:
             print('There are still %d people left.' % Person.population)
 
     def sayHi(self):
-        '''Greeting by the person.
-        Really, that's all it does.'''
+        """Greeting by the person.
+        Really, that's all it does."""
         print('Hi, my name is %s.' % self.name)
 
     def howMany(self):
-        '''Prints the current population.'''
+        """Prints the current population."""
         if Person.population == 1:
             print('I am the only person here.')
         elif Person.population == 2:print('we are two  person here.')

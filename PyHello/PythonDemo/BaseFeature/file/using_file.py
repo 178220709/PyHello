@@ -2,12 +2,12 @@
 # Filename: using_file.py
 
 
-poem = '''\
+poem = """\
 Programming is fun
 When the work is done
 if you wanna make your work also fun:
         use Python!
-'''
+"""
 
 f = open(r'D:\temp\1.txt', 'a') # open for 'w'riting
 f.write(poem) # write text to file

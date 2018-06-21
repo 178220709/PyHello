@@ -4,10 +4,12 @@
     else:
         return y
 
-print ( maximum(4))
+
+print(maximum(4))
 
 
 def someFunction():
     pass
 
-print ( someFunction())
+
+print(someFunction())

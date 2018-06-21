@@ -4,7 +4,7 @@
 import sys
 
 def readfile(filename):
-    '''Print a file to the standard output.'''
+    """Print a file to the standard output."""
     f = file(filename)
     while True:
         line = f.readline()
@@ -24,12 +24,12 @@ if sys.argv[1].startswith('--'):
     if option == 'version':
         print ('Version 1.2')
     elif option == 'help':
-        print ('''\
+        print ("""\
 This program prints files to the standard output.
 Any number of files can be specified.
 Options include:
   --version : Prints the version number
-  --help    : Display this help''')
+  --help    : Display this help""")
     else:
         print ('Unknown option.')
     sys.exit()

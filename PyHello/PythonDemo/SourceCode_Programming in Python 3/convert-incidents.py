@@ -108,7 +108,7 @@ class Incident:
         220
         >>> incident.narrative = "Two different\\nlines of text"
         >>> str(incident)
-        "Incident('2007061289X', datetime.date(2007, 6, 12), 'Los Angeles', '8184XK', 'CVS91', 17.5, 1258, False, '''Two different\\nlines of text''')"
+        "Incident('2007061289X', datetime.date(2007, 6, 12), 'Los Angeles', '8184XK', 'CVS91', 17.5, 1258, False, """Two different\\nlines of text""")"
         >>> kwargs["report_id"] = "fail"
         >>> incident = Incident(**kwargs)
         Traceback (most recent call last):
@@ -234,7 +234,7 @@ class Incident:
                 "{aircraft_type!r}, "
                 "{pilot_percent_hours_on_type!r}, "
                 "{pilot_total_hours!r}, {midair!r}, "
-                "'''{narrative}''')".format(**self))
+                """"{narrative}""")".format(**self))
 
 
 class IncidentCollection(dict):
